@@ -1,4 +1,4 @@
-# 🌤️ SanchAI Weather Assistant
+# SanchAI Weather Assistant
 
 A minimal full-stack weather assistant built as part of the **SanchAI Analytics Internship Tech Assessment**.
 
@@ -7,7 +7,7 @@ The backend uses **FastAPI + LangChain + OpenRouter (LLM)** to determine when to
 
 ---
 
-## 🚀 Features
+## Features
 
 - React-based frontend (Vite)
 - FastAPI backend
@@ -20,7 +20,7 @@ The backend uses **FastAPI + LangChain + OpenRouter (LLM)** to determine when to
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - React (Vite)
@@ -36,7 +36,7 @@ The backend uses **FastAPI + LangChain + OpenRouter (LLM)** to determine when to
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 
@@ -67,9 +67,9 @@ Weather_App/
 ```
 
 
-## ⚙️ Backend Setup
+## Backend Setup
 
-### 1️⃣ Create virtual environment
+### 1. Create virtual environment
 
 ```bash
 cd backend
@@ -77,11 +77,11 @@ python3.11 -m venv venv
 source venv/bin/activate
 ```
 
-### 2️⃣ Install dependencies
+### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-### 3️⃣ Configure environment variables
+### 3. Configure environment variables
 
 ## Create .env file inside backend/:
 ```bash
@@ -91,7 +91,7 @@ pip install -r requirements.txt
    
 ```
 
-### 4️⃣ Run backend
+### 4. Run backend
 ```bash
 python -m uvicorn app.main:app
 ```
@@ -99,7 +99,7 @@ python -m uvicorn app.main:app
 ## Backend runs at:
 [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-## 🎨 Frontend Setup
+## Frontend Setup
 
 ```bash
 cd frontend
@@ -111,16 +111,16 @@ npm run dev
 
 [http://localhost:5173](http://localhost:5173)
 
-## 🖼️ Screenshots
+## Screenshots
 
-### 🌤️ Weather Query – Valid Input
+### Weather Query – Valid Input
 This example shows a successful weather-related query handled by the assistant.
 
 ![Weather Query Success](assets/image1.png)
 
 ---
 
-### 🚫 Non-Weather Input Handling
+### Non-Weather Input Handling
 This example shows how the system gracefully handles non-weather-related queries.
 
 ![Non Weather Input](assets/image2.png)
