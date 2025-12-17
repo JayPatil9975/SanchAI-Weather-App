@@ -39,6 +39,7 @@ The backend uses **FastAPI + LangChain + OpenRouter (LLM)** to determine when to
 ## 📂 Project Structure
 
 ```text
+
 Weather_App/
 │
 ├── backend/
@@ -62,10 +63,9 @@ Weather_App/
 │   └── package.json      # Frontend dependencies
 │
 └── README.md             # Project documentation
+
 ```
 
-
----
 
 ## ⚙️ Backend Setup
 
@@ -84,9 +84,12 @@ pip install -r requirements.txt
 ### 3️⃣ Configure environment variables
 
 ## Create .env file inside backend/:
-
+```bash
    OPENROUTER_API_KEY=your_openrouter_api_key
-   OPENROUTER_MODEL=openai/gpt-3.5-turbo
+   OPENROUTER_MODEL=openai/gpt-4o-mini
+   WEATHER_API_KEY=your_weather_api
+   
+```
 
 ### 4️⃣ Run backend
 ```bash
@@ -94,7 +97,7 @@ python -m uvicorn app.main:app
 ```
 
 ## Backend runs at:
-[text](http://127.0.0.1:8000)
+[http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ## 🎨 Frontend Setup
 
@@ -106,7 +109,7 @@ npm run dev
 
 ## Frontend runs at:
 
-[text](http://localhost:5173)
+[http://localhost:5173](http://localhost:5173)
 
 ## 🖼️ Screenshots
 
