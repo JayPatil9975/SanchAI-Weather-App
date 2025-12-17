@@ -37,27 +37,32 @@ The backend uses **FastAPI + LangChain + OpenRouter (LLM)** to determine when to
 ---
 
 ## 📂 Project Structure
+
+```text
 Weather_App/
 │
 ├── backend/
-│ ├── app/
-│ │ ├── main.py
-│ │ ├── agent.py
-│ │ ├── tools.py
-│ │ ├── schemas.py
-│ │ └── config.py
-│ ├── requirements.txt
-│ └── .env
+│   ├── app/
+│   │   ├── main.py        # FastAPI entry point
+│   │   ├── agent.py       # LangChain agent logic
+│   │   ├── tools.py       # Weather tool integration
+│   │   ├── schemas.py    # Request/response schemas
+│   │   └── config.py     # Environment & config loader
+│   │
+│   ├── requirements.txt  # Backend dependencies
+│   └── .env              # Environment variables (not committed)
 │
 ├── frontend/
-│ ├── src/
-│ │ ├── App.jsx
-│ │ ├── App.css
-│ │ ├── api.js
-│ │ └── main.jsx
-│ └── package.json
+│   ├── src/
+│   │   ├── App.jsx       # Main React component
+│   │   ├── App.css       # Styling for App component
+│   │   ├── api.js        # Backend API calls
+│   │   └── main.jsx      # React entry point
+│   │
+│   └── package.json      # Frontend dependencies
 │
-└── README.md
+└── README.md             # Project documentation
+```
 
 
 ---
